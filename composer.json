@@ -1,26 +1,40 @@
 {
-  "name": "crypto-pay/binancepay",
-  "description": "Binance Pay API for Laravel",
-  "type": "project",
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "CryptoPay\\Binancepay\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "CryptoPay\\Binancepay\\BinancepayServiceProvider"
-      ]
-    }
-  },
-  "authors": [
-    {
-      "name": "hansajith18",
-      "email": "hansajith18@gmail.com"
-    }
-  ],
-  "minimum-stability": "dev",
-  "require": {}
+    "name": "crypto-pay/binancepay",
+    "description": "Binance Pay API for Laravel",
+    "type": "library",
+    "keywords": [
+        "hansajith18",
+        "crypto",
+        "web3",
+        "binance",
+        "binance-pay",
+        "laravel",
+        "api",
+        "payments"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Navod Hansajith",
+            "email": "hansajith18@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0|^8.1|^8.2",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CryptoPay\\Binancepay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CryptoPay\\Binancepay\\BinancepayServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
 }
