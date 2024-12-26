@@ -222,7 +222,7 @@ You can monitor the payment status using the parameter "status".
     {  
         $transaction = Transaction::findOr($request->get('trx-id'), function () {
             // return redirect()->route('preferred-route')
-            //                  ->with('warning', 'Something went wrong'); // show success invoice
+            //                  ->with('warning', 'Something went wrong'); // show error
         });
 
         $order_status = (new BinancePay("binancepay/openapi/v2/order/query"))
